@@ -1,0 +1,33 @@
+/** Fazer os arquivos css dentro dessa pasta pra melhor organização **/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    text-align: center;
+}
+
+#minhaDiv{
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color: rgba(174, 228, 158, 0.747);
+    width: 1000px;
+    height: 700px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imgs{
+    width: 80px;
+    margin: 20px;
+}
+
+#text{
+    background-color:  rgba(174, 228, 158, 0.747);
+}
