@@ -1,0 +1,126 @@
+/** Fazer os arquivos css dentro dessa pasta pra melhor organização **/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: rgba(174, 228, 158, 0.747);
+}
+
+a{
+    text-decoration: none;
+    background-color: rgba(87, 123, 190, 0.877);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+#minhaDiv{
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color: rgba(174, 228, 158, 0.747);
+    width: 1000px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imgs{
+    width: 80px;
+    margin: 20px;
+}
+
+#text{
+    background-color:  rgba(174, 228, 158, 0.671);
+}
+
+.materiais {
+    display: flex;
+    justify-content: space-around;
+}
+
+.material {
+    align-items: center;
+}
+
+.material div {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    display: block;
+}
+
+main {
+    width: 80%;
+    background: rgba(199, 194, 194, 0.377);
+    margin: auto;
+    padding: 15px;
+ }
+ 
+ 
+ .perfil {
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ figure {
+     display: flex;
+ }
+ 
+ img {
+     width: 90px;
+     height: 90px;
+     border-radius: 50%;    
+ }
+ 
+ .dados {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .dados div {
+     justify-content: centerter;
+     width: 120px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .types{
+    margin: 5px;
+    font-family: monospace;
+ }
+
+ #peso {
+    width: 185px;
+    text-align: center;
+    padding: 15px;
+}
+
+.pedidosDeUsers{
+    /*Divs que separam os registros*/
+    display: inline-block;
+    margin: 50px;
+    color: aliceblue;
+    width: 30%;
+    background: rgba(64, 66, 62, 0.377);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678);
+}
+
+a.trash{
+    /*Lixeiras que excluem os registros*/
+    background-color: rgb(207, 98, 98);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678);
+}
