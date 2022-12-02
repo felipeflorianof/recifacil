@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Reem Kufi Ink', sans-serif;
+
+}
+body{
+    background-image: url(/recifacil/img/back.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+h2{
+  text-align: center;
+}
+
+.perfil{
+  display: flex;
+  align-items:center;
+}
+.perfil img{
+  margin: 10px;
+  height: 160px;
+  border-radius: 50%;
+}
+.dados{
+  display: flex;
+  flex-direction: column;
+}
+.dados h2{
+  font-size: 3rem;
+}
+.dados i{
+  font-size: 1.5rem;
+}
+
+.box-search{
+   display: flex;
+   justify-content: center;
+   gap: 0.1%;
+   margin: 10px;
+}
+
+a.trash{
+    background-color: rgb(207, 98, 98);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678);
+}
+
+main {
+    border-radius: 30px;
+    width: 80%;
+    background-color: rgba(211, 211, 211, 0.4 );
+    margin: auto;
+    padding: 15px;
+
+ }
+
+ .config{
+  position: sticky;
+  right: 500px;
+ }

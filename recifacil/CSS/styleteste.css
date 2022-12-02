@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/recifacil/img/back.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+nav .logo{
+    width: 150px;
+}
+.links{
+    flex: 1;
+    text-align: right;
+}
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.links ul li a{
+    font-family: Arial;
+    color: rgb(31, 177, 56);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.links ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: rgb(31, 177, 56);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.links ul li:hover::after{
+ width: 100%;
+}
+.botaoenviar{
+    text-decoration: none;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 15pt;
+    font-family: monospace;
+    font-weight: bold;
+    width: 37%;
+    background-color: rgb(8, 97, 8);
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    border-radius: 3px;
+}
+ .botaoenviar:hover{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(17, 119, 63) 0%, rgb(30, 117, 12) 90% );
+ }
+
+ .logo{
+    width: 55%;
+    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
