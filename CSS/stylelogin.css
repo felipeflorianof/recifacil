@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Reem Kufi Ink', sans-serif;
+
+}
+body{
+    
+    text-align: center;
+    background-image: url(/recifacil/img/back.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+} 
+hr{
+    width: 300px;
+}
+div{
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    background-color: rgba(211, 211, 211, 0.4 );
+    padding: 20px;
+    width: 35%;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.input{
+    margin-top: 30px;
+    padding: 10px;
+    width: 300px;
+    border: none;
+    background-color: rgba(211, 211, 211, 0);
+}
+
+.botaoenviar{
+    margin-bottom: 30px;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 15pt;
+    font-family: monospace;
+    font-weight: bold;
+    width: 37%;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    border-radius: 3px;
+}
+.botaoenviar:hover{
+    background-color: rgb(33, 128, 18);
+    box-shadow: 1px 2px 3px black;
+    transition: 0.6s;
+}

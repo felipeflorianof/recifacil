@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
+body{
+    background-image: url(/recifacil/img/back.png);
+    background-size: 420px;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    background-color: rgba(232, 232, 232, 0.7);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    padding: 50px;
+    display: flex;
+    justify-content: center;    
+    
+    
+}
+
+.labeldata{
+top: -15px;
+font-size: 12px;
+}
+.dividir{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.container{
+    display: inline-block;
+    width: 900px;
+    height: 500px;
+}
+.input{
+    position: relative;
+    
+
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 1rem;
+    
+    
+}
+.labelinput{
+position: absolute;
+top: 0px;
+left: 0px;
+pointer-events: none;
+transition: 1s;
+}
+.inputUser:focus ~ .labelinput, .inputUser:valid ~.labelinput{
+top: -15px;
+font-size: 12px;
+}
+h1{
+    font-size: 4rem;
+}
+img{
+    width: 20px;
+}
+.termos{
+    position: relative;
+    top: 45px;
+    text-align: center;
+}
+#content{
+  position: relative;
+  top: 110px;
+}
+#submit{
+    border: none;
+    background:none;
+    background-color: rgb(23, 167, 23);
+    width: 180px;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: aliceblue;
+    transition: 0.55s;
+}
+#submit:hover{
+    border: 1px solid green;
+    background-color: white;
+    color: rgb(23, 167, 23);
+}
+
+dialog{
+    margin:50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    width: 600px;
+    height: 350px;
+    padding: 50px;
+    border: 3px solid green;
+    border-radius: 10px;
+}
+.divMid{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.btn{
+  color: #fff;
+  border: none;
+  background: none;
+  background-color: green;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  transition: 0.5s;
+}
+.btn:hover{
+    border: 2px solid rgb(23, 171, 23);
+    background-color: #fff;
+    color: green;
+}
+h2{
+    font-size: 1rem;
+}
