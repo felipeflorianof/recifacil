@@ -1,0 +1,6 @@
+[submodule "recifacil/Recifacil"]
+	path = recifacil/Recifacil
+	url = https://github.com/felipeflorianof/RecifacilProject.git
+[submodule "RecifacilProject/Recifacil"]
+	path = RecifacilProject/Recifacil
+	url = https://github.com/felipeflorianof/RecifacilProject.git
