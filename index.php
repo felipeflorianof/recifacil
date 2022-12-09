@@ -24,7 +24,7 @@
     <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <div class="texto">
-        <img src="/recifacil/img/Logotipo1.png" class="logotipo">
+        <img src="/RecifacilProject/img/Logotipo1.png" class="logotipo">
     </div>
    </header>
    <div class="escolha">
@@ -49,7 +49,7 @@
   </dialog>
    
    </div>
-    <script src="/recifacil/JS/scripthome.js"></script>
+    <script src="/RecifacilProject/JS/scripthome.js"></script>
    
 
 </body>

@@ -26,7 +26,7 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Recifacil</title>
 </head>
 <body>
     <div class="saida">
@@ -72,8 +72,12 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
     
 </div>
     <?php
-            echo "<dialog open>";
-
+            echo "<dialog>";
+            echo "<div class='saidapop'>";
+            echo "<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='currentColor' class='saidapop' viewBox='0 0 16 16'>
+           <path d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'/>
+            </svg>";
+          echo "</div>";
             echo "<div class='box-div'>";
             echo "<h2 class='box-search-title'>Lista De Pedidos:</h2>
             <div class='box-search'>
@@ -83,7 +87,7 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
                     <path d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/></svg>
                 </button>";
             echo "</div>";
-            
+            echo "<section class='content'>";
             if(!empty($_GET['search'])){
 
                 $data = $_GET['search'];
@@ -91,7 +95,8 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
                 $result = $conexao->query($sql);
 
                 while($user_data = mysqli_fetch_assoc($result)){
-                    echo " <div id='content'>";
+
+
                     echo "<div class='pedidosDeUsers'>";
                     $id = $user_data['id'];
                     echo "<p>Materiais: ".$user_data['plastico']." ".$user_data['vidro']." ".$user_data['metal']." ".$user_data['papel']." ".$user_data['elixo'];
@@ -106,7 +111,9 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
                     </svg>
                     </a>";
                     echo "</div>";
-                    echo "</div>";
+                    echo "</section>";
+                    
+                   
                 }
             }     
             else{
@@ -133,8 +140,10 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
                 }
             }
             echo "</dialog>";
+    echo "<button id='btn'>Solictações de Coleta";
+            echo "</button>";
+            
     ?>
-
     <script src="JS/ScriptSystemPonto.js"></script>
 </body>
 </html>
