@@ -1,3 +1,8 @@
 # Recifacil
 
-O que é? Um Site (Futuramente um app) com intuito de facilitar a doação e coleta de materiais recíclaveis no centro do Recife - Mas como funciona? Basicamente ao entrar no site é pedido ao usuário para fazer um cadastro com algumas informações importantes, depois de cadastrado, o usuário poderá logar na sua conta e fazer uma solicitação de coleta.
+A web System That has the intention to help the donattion and the collection of recycling materials in my city, Recife.
+
+But how it works?
+Basically the user will log in and he will be able do make a request, this request will be analized and send to the recycling center that will provide ways to collect that item and then Close the request.
+
+What I did was create 2 Systems that 'talk' to each other. One for the donator and another one for the recycling center.
