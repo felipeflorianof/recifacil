@@ -1,6 +1,6 @@
 # Recifacil
 
-A web System That has the intention to help the donation and the collection of recycling materials in my city, Recife.
+A Web System That has the intention to help the donation and the collection of recycling materials in my city, Recife.
 
 But how it works?<br>
 Basically the user will log in and he will be able to make a request, this request will be analyzed and sent to the recycling center that will provide ways to collect that item and then Close the request.
