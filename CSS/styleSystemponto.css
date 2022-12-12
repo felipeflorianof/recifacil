@@ -36,8 +36,6 @@ a{
 svg{
   color: black;
 }
-
-
 .perfil img{
   margin: 10px;
   height: 160px;
@@ -89,7 +87,7 @@ a.trash:hover{
 background-color: rgb(143, 29, 29);
 transition: 0.5s;
 }
-
+ 
  .box-search{
   display: flex;
   justify-content: center;
@@ -138,4 +136,11 @@ dialog{
   position: absolute;
   right: 35px;
   cursor: pointer;
+}
+#btn{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
 }
