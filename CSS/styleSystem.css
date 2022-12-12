@@ -113,7 +113,7 @@ main {
     display: inline-block;
     text-align: left;
     max-height: 500px;
-    width: 250px;
+    width: 350px;
     background: rgba(64, 66, 62, 0.377);
     padding: 5px;
     border-radius: 5px;
@@ -175,3 +175,11 @@ transition: 0.5s;
  .material{
   text-align: center;
  }
+
+ .content{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  grid-gap: 20px;
+}

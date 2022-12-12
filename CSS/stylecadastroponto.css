@@ -135,3 +135,16 @@ dialog{
     color: var(--color-red);
     display: none;
 }
+
+svg{
+    color: black;
+}
+
+.saida{
+position: absolute;
+margin: 20px;
+}
+.sair{
+margin: 20px;
+color: black;
+}

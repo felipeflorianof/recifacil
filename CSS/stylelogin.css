@@ -22,7 +22,7 @@ h1{
 hr{
     width: 300px;
 }
-div{
+.login{
     text-align: center;
     justify-content: center;
     margin-top: 30px;
@@ -70,3 +70,16 @@ form{
     box-shadow: 1px 2px 3px black;
     transition: 0.6s;
 }
+
+svg{
+        color: black;
+    }
+
+    .saida{
+    position: absolute;
+    margin: 20px;
+   }
+   .sair{
+    margin: 20px;
+    color: black;
+   }

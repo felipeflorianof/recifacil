@@ -137,3 +137,16 @@ dialog{
 h2{
     font-size: 1rem;
 }
+
+svg{
+    color: black;
+}
+
+.saida{
+position: absolute;
+margin: 20px;
+}
+.sair{
+margin: 20px;
+color: black;
+}

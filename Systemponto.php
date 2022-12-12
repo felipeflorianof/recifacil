@@ -1,9 +1,7 @@
 <?php
 session_start();
 include('config.php');
-
 if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']) == true)){
-
     unset($_SESSION['emailponto']);
     unset($_SESSION['senhaponto']);
     header('Location: loginponto.php');
@@ -14,7 +12,6 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
      $sql3 = "SELECT nome, telefone, cidade, cnpj from recycling_center WHERE emailponto = '$emailponto' AND senhaponto = '$senhaponto'";
      $result3 = $conexao->query($sql3);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +23,7 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Recifacil</title>
 </head>
 <body>
     <div class="saida">
@@ -39,7 +36,6 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
             </a>
         </div>
     </div>
-
 <main>
     <div class="perfil">
             <img src="img/Ponto.png" alt="foto de perfil"></img>
@@ -66,13 +62,9 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
         </div>
     </div>
 </main>
+    
 </div>
     <?php
-<<<<<<< HEAD
-=======
-          
-            
->>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0
             echo "<div class='box-div'>";
             echo "<h2 class='box-search-title'>Lista De Pedidos:</h2>
             <div class='box-search'>
@@ -82,14 +74,13 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
                     <path d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/></svg>
                 </button>";
             echo "</div>";
+            echo "<section class='content'>";
+            
             if(!empty($_GET['search'])){
-
                 $data = $_GET['search'];
                 $sql = "SELECT pedidos.id, pedidos.plastico, pedidos.vidro, pedidos.metal, pedidos.papel, pedidos.elixo, pedidos.pesomedio, users.nome, users.telefone, users.cidade, users.cpf from pedidos inner join users  on pedidos.fk_users = users.cpf WHERE users.cidade LIKE '%$data%' or users.nome LIKE '%$data%' or users.estado LIKE '%$data%' or users.email LIKE '%$data%' or users.telefone LIKE '%$data%'";
                 $result = $conexao->query($sql);
-
                 while($user_data = mysqli_fetch_assoc($result)){
-                    
                     echo "<div class='pedidosDeUsers'>";
                     $id = $user_data['id'];
                     echo "<p>Materiais: ".$user_data['plastico']." ".$user_data['vidro']." ".$user_data['metal']." ".$user_data['papel']." ".$user_data['elixo'];
@@ -104,19 +95,14 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
                     </svg>
                     </a>";
                     echo "</div>";
-<<<<<<< HEAD
-=======
-  
                     
->>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0
                 }
+                
             }     
+            
             else{
-
                 $sqlshowpedidos = "SELECT pedidos.id, pedidos.plastico, pedidos.vidro, pedidos.metal, pedidos.papel, pedidos.elixo, pedidos.pesomedio, users.nome, users.telefone, users.cidade, users.cpf from pedidos inner join users  on pedidos.fk_users = users.cpf ORDER BY id DESC";
                 $resultpedidos = $conexao->query($sqlshowpedidos);
-
-
                 while($user_data = mysqli_fetch_assoc($resultpedidos)){
                     echo "<div class='pedidosDeUsers'>";
                     $id = $user_data['id'];
@@ -131,17 +117,10 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
                     </svg>
                     </a></p>";
                     echo "</div>"; 
-                    echo "</section>";
-
                 }
-<<<<<<< HEAD
+                echo "</section>";
             }
-=======
-
-            }     
->>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0
     ?>
-
     <script src="JS/ScriptSystemPonto.js"></script>
 </body>
 </html>

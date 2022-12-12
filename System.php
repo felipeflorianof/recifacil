@@ -149,7 +149,7 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
 <?php
     $sqlshowpedidos = "SELECT pedidos.id, pedidos.plastico, pedidos.vidro, pedidos.metal, pedidos.papel, pedidos.elixo, pedidos.pesomedio, users.nome, users.telefone, users.cidade from pedidos inner join users on pedidos.fk_users = users.cpf WHERE email = '$email' AND senha = '$senha'";
     $result2 = $conexao->query($sqlshowpedidos);
-
+        echo "<section class='content'>";
         while($user_data = mysqli_fetch_assoc($result2)){
             echo "<div class='pedidosDeUsers'>";
             echo "<p>Materiais: <td>".$user_data['plastico']." ".$user_data['vidro']." ".$user_data['metal']." ".$user_data['papel']." ".$user_data['elixo'];
@@ -158,7 +158,9 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
             echo "<p>Contato: <td>".$user_data['telefone']."</td></p>";
             echo "<p>Cidade: <td>".$user_data['cidade']."</td></p>";
             echo "</div>";
+            
         }
+        echo "</section>";
         ?>
 </body>
 </html>

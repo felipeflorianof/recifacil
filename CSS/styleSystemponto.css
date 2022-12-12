@@ -4,26 +4,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Reem Kufi Ink', sans-serif;
-
 }
 body{
-    background-image: url(/recifacil/img/back.png);
+    background-image: url(/ReciFacilProject/img/back.png);
     background-size: 400px;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
     justify-content: center;
 }
-
 a{
   text-decoration: none;
   text-align: center;
 }
-
 .perfil{
   display: flex;
 }
-
  .config{
   max-width: 1000px;
   position: absolute;
@@ -32,12 +28,9 @@ a{
   right: 0;
   text-decoration: none;
 }
-
 svg{
   color: black;
 }
-
-
 .perfil img{
   margin: 10px;
   height: 160px;
@@ -64,23 +57,17 @@ main {
  }
    
  .pedidosDeUsers{
-    margin: 10px;
-    display: inline-block;
-    text-align: left;
-    height: auto;
-    width: 250px;
+    width: 400px;
     background: rgba(64, 66, 62, 0.377);
     padding: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678);
  }
-
  .pedidosDeUsers a.trash{
   position: relative;
   display: flex;
   text-align: center;
  }
-
  a.trash{
   background-color: rgb(236, 28, 28);
   padding: 10px;
@@ -93,7 +80,7 @@ a.trash:hover{
 background-color: rgb(143, 29, 29);
 transition: 0.5s;
 }
-
+ 
  .box-search{
   display: flex;
   justify-content: center;
@@ -105,57 +92,20 @@ transition: 0.5s;
 }
  .box-div{
   display: block;
-<<<<<<< HEAD
-  margin-top: 40px;
-=======
   margin-top: 80px;
- 
->>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0
+
 }
  .saida{
   position: absolute;
-  margin: 20px;
+  margin: 30px;
  }
- .sair{
-  margin: 20px;
-  color: black;
- }
-
-<<<<<<< HEAD
-section{
-  text-align: center;
-  position: absolute;
-  width: 1000px;
-  padding: 10px;
-  height: auto;
-=======
  .content{
+  margin-top: 60px;
   display: grid;
   grid-template-columns: auto auto;
   place-items: center;
-  position: absolute;
-  top: 90%;
->>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0
-  left: 50%;
-  transform: translate(-50%, -50%);
-<<<<<<< HEAD
-}
+  grid-gap: 20px;
+  padding-right: 250px;
+  padding-left: 250px;
 
-#content{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  
 }
-
-=======
-  gap: 30px
-  ;
- 
-}
-
-.saidapop{
-  position: absolute;
-  right: 35px;
-  cursor: pointer;
-}
->>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0

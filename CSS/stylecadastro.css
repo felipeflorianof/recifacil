@@ -134,3 +134,16 @@ dialog{
     background-color: #fff;
     color: green;
 }
+
+svg{
+    color: black;
+}
+
+.saida{
+position: absolute;
+margin: 20px;
+}
+.sair{
+margin: 20px;
+color: black;
+}
