@@ -68,6 +68,11 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
 </main>
 </div>
     <?php
+<<<<<<< HEAD
+=======
+          
+            
+>>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0
             echo "<div class='box-div'>";
             echo "<h2 class='box-search-title'>Lista De Pedidos:</h2>
             <div class='box-search'>
@@ -99,6 +104,11 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
                     </svg>
                     </a>";
                     echo "</div>";
+<<<<<<< HEAD
+=======
+  
+                    
+>>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0
                 }
             }     
             else{
@@ -121,9 +131,15 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
                     </svg>
                     </a></p>";
                     echo "</div>"; 
-                    
+                    echo "</section>";
+
                 }
+<<<<<<< HEAD
             }
+=======
+
+            }     
+>>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0
     ?>
 
     <script src="JS/ScriptSystemPonto.js"></script>

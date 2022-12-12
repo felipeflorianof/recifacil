@@ -105,7 +105,12 @@ transition: 0.5s;
 }
  .box-div{
   display: block;
+<<<<<<< HEAD
   margin-top: 40px;
+=======
+  margin-top: 80px;
+ 
+>>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0
 }
  .saida{
   position: absolute;
@@ -116,15 +121,24 @@ transition: 0.5s;
   color: black;
  }
 
+<<<<<<< HEAD
 section{
   text-align: center;
   position: absolute;
   width: 1000px;
   padding: 10px;
   height: auto;
+=======
+ .content{
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+  position: absolute;
+  top: 90%;
+>>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0
   left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
+<<<<<<< HEAD
 }
 
 #content{
@@ -133,3 +147,15 @@ section{
   
 }
 
+=======
+  gap: 30px
+  ;
+ 
+}
+
+.saidapop{
+  position: absolute;
+  right: 35px;
+  cursor: pointer;
+}
+>>>>>>> 7f0ff01ad1ff14035d79146e3417aa49989eb0e0
