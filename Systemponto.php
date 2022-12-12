@@ -73,11 +73,7 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
 </div>
     <?php
           
-            echo "<div class='saidapop'>";
-            echo "<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='currentColor' class='saidapop' viewBox='0 0 16 16'>
-           <path d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'/>
-            </svg>";
-          echo "</div>";
+            
             echo "<div class='box-div'>";
             echo "<h2 class='box-search-title'>Lista De Pedidos:</h2>
             <div class='box-search'>
@@ -111,9 +107,8 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
                     </svg>
                     </a>";
                     echo "</div>";
-                    echo "</section>";
+  
                     
-                   
                 }
             }     
             else{
@@ -136,12 +131,11 @@ if((!isset($_SESSION['emailponto']) == true) and (!isset($_SESSION['senhaponto']
                     </svg>
                     </a></p>";
                     echo "</div>"; 
-                    
+                    echo "</section>";
+
                 }
-            }
-            echo "<button id='btn'>Solictações de Coleta";
-            echo "</button>";
-            
+
+            }     
     ?>
     <script src="JS/ScriptSystemPonto.js"></script>
 </body>

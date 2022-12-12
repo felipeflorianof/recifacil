@@ -99,6 +99,8 @@ transition: 0.5s;
 }
  .box-div{
   display: block;
+  margin-top: 80px;
+ 
 }
  .saida{
   position: absolute;
@@ -112,35 +114,18 @@ transition: 0.5s;
  .content{
   display: grid;
   grid-template-columns: auto auto;
-  grid-column-gap:20px;
   place-items: center;
-  grid-gap: 20px;
-  margin: 50px 65px;
-  height: auto;
-  width: auto;
-}
-dialog{
-  margin-top: 180px;
   position: absolute;
-  width: 1000px;
-  height: auto;
-  padding: 30px;
+  top: 90%;
   left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
-  border: none;
-  border-radius: 10px;
-  border: 2px solid green;
+  gap: 30px
+  ;
+ 
 }
+
 .saidapop{
   position: absolute;
   right: 35px;
   cursor: pointer;
-}
-#btn{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
 }
