@@ -23,12 +23,22 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styleSystem.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="JS/scriptSystem.js" defer></script>
     
     <title>Document</title>
 </head>
 <body>
-    <a href="quitponto.php">Sair</a>
+<div class="saida">
+        <div class="sair">
+            <a href="quitponto.php">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
 <main>
     <div class="perfil">
             <img src="img/Doador.png" alt="foto de perfil"></img>
@@ -67,16 +77,17 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
 
 ?>
 <form action="System.php" method="POST">
-    <div id="minhaDiv">
-        Há tantos materiais que podem ser reciclados que seria necessário um livro para entrar em detalhes sobre cada um deles.No entanto, listamos abaixo alguns dos itens recicláveis ​​mais comuns que as pessoas encontram em suas vidas cotidianas.
-        <br><br><br><br>
+    <div id="texto">
+        <p>Há tantos materiais que podem ser reciclados que seria necessário um livro para entrar em detalhes sobre cada um deles. No entanto, listamos abaixo alguns dos itens recicláveis ​​mais comuns que as pessoas encontram em suas vidas cotidianas.</p>
+        
         <!-- Simbolos de reciclagem -->
+
  <section class="materiais">
         <section class="material">
         <h3 class="types">Plástico</h3>
         <label for="plastico">
             <figure>
-              <img src="img/Plástico.png" alt="Reciclagem de Plástico">   
+              <img src="img/Plástico.png" class="materiaisimg" alt="Reciclagem de Plástico">   
             </figure>
             <div>
                 <input type="checkbox" name="plastico" id="plastico" value="plastico">
@@ -87,7 +98,7 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
         <h3 class="types">Vidro</h3>
         <label for="vidro">
             <figure>
-                 <img src="img/vidro.png" alt="Reciclagem de Vidro">
+                 <img src="img/vidro.png" class="materiaisimg" alt="Reciclagem de Vidro">
             </figure>         
             <div>
                 <input type="checkbox" name="vidro" id="vidro" value="vidro">  
@@ -98,7 +109,7 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
         <h3 class="types">Metal</h3>
         <label for="metal">
             <figure>
-                <img src="img/Metal.png" alt="Reciclagem de Metal">
+                <img src="img/Metal.png" class="materiaisimg" alt="Reciclagem de Metal">
             </figure>
             <div>
                 <input type="checkbox" name="metal" id="metal" value="metal">
@@ -109,7 +120,7 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
         <h3 class="types">Papel</h3>
         <label for="papel">
             <figure>
-                <img src="img/Papel.png" alt="Reciclagem de Papel">
+                <img src="img/Papel.png" class="materiaisimg" alt="Reciclagem de Papel">
             </figure>       
             <div>
                 <input type="checkbox" name="papel" id="papel" value="papel">
@@ -120,7 +131,7 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
         <h3 class="types">E-lixo</h3>
         <label for="elixo">
             <figure>
-                <img src="img/E-lixo.png" alt="Reciclagem de E-lixo">
+                <img src="img/E-lixo.png" class="materiaisimg" alt="Reciclagem de E-lixo">
             </figure>    
             <div>
                 <input type="checkbox" name="elixo" id="elixo" value="elixo">
@@ -128,8 +139,10 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
             </label>           
         </section>
     </section>
-    <br><div><input type="number" name="pesomedio" id="peso" placeholder="Peso Médio da carga:" required></div><br>
-        <input type="submit" name="request" value="Solicitar Coleta">
+    <input class='form-control w-50 mx-auto' type="number" name="pesomedio" id="peso" placeholder="Peso Médio da carga:" required>
+    <div class="botaosubmit">
+        <input type="submit" class="btn btn-success" name="request" value="Solicitar Coleta">
+    </div>
     </div>
 </form>
 
@@ -147,6 +160,5 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
             echo "</div>";
         }
         ?>
-
 </body>
 </html>

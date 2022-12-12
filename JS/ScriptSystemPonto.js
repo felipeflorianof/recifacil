@@ -6,11 +6,9 @@ search.addEventListener("keydown", (event) => {
     }
 });
 
-
 function searchData(){
     window.location = 'Systemponto.php?search='+search.value;
 }
-
 
  const saida = document.querySelector("dialog .saida")
  const dialog = document.querySelector("dialog")

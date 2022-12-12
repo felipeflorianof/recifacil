@@ -19,10 +19,70 @@ h2{
   text-align: center;
 }
 
+.types{
+  margin-top: 25px;
+}
+
+a.trash{
+    background-color: rgb(207, 98, 98);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678);
+}
+
+ .pedidosDeUsers{
+    /*Divs que separam os registros*/
+    display: inline-block;
+    margin: 50px;
+    width: 30%;
+    background: rgba(64, 66, 62, 0.377);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678);
+}
+
+.materiais {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    justify-content: center;
+}
+
+.material div {
+    display: flex;
+    justify-content: center;
+}
+
+.materiaisimg {
+    display: block;
+    width: 130px;
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+}
+
 .perfil{
   display: flex;
   align-items:center;
 }
+
+ .config{
+  max-width: 1000px;
+  position: absolute;
+  margin: 20px;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+}
+
+svg{
+  color: black;
+}
+
+
 .perfil img{
   margin: 10px;
   height: 160px;
@@ -38,69 +98,80 @@ h2{
 .dados i{
   font-size: 1.5rem;
 }
-
-.box-search{
-   display: flex;
-   justify-content: center;
-   gap: 0.1%;
-   margin: 10px;
-}
-
-a.trash{
-    background-color: rgb(207, 98, 98);
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678);
-}
-
 main {
+    top: 20px;
+    position: relative;
+    width: 1000px;
     border-radius: 30px;
-    width: 80%;
     background-color: rgba(211, 211, 211, 0.4 );
     margin: auto;
     padding: 15px;
-
  }
-
- .config{
-  position: sticky;
-  right: 500px;
- }
-
+   
  .pedidosDeUsers{
-    /*Divs que separam os registros*/
+    margin: 10px;
     display: inline-block;
-    margin: 50px;
-    color: aliceblue;
-    width: 30%;
+    text-align: left;
+    max-height: 500px;
+    width: 250px;
     background: rgba(64, 66, 62, 0.377);
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678);
+ }
+
+ .pedidosDeUsers a.trash{
+  position: relative;
+  display: flex;
+  text-align: center;
+ }
+
+ a.trash{
+  background-color: rgb(236, 28, 28);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678);
+  display: flex;
+  justify-content: center;
+}
+a.trash:hover{
+background-color: rgb(143, 29, 29);
+transition: 0.5s;
 }
 
-.materiais {
-    display: flex;
-    justify-content: space-around;
+ #peso{
+  display: flex;
+  justify-content: center;
+  gap: 0.1%;
+  margin-top: 30px;
 }
-
-.material {
-    align-items: center;
+ .box-search-title{
+  text-align: center;
 }
-
-.material div {
-    display: flex;
-    justify-content: center;
+ .box-div{
+  display: block;
 }
+ .saida{
+  position: absolute;
+  margin: 20px;
+ }
+ .sair{
+  margin: 20px;
+  color: black;
+ }
+ #texto{
+  margin: 80px;
+  font-size: 1.5rem;
+ } 
 
-img {
-    display: block;
-}
+ #texto p{
+ }
+ .botaosubmit{
+  position: relative;
+  margin: 40px;
+  text-align: center;
+ }
 
-main {
-    width: 80%;
-    background: rgba(199, 194, 194, 0.377);
-    margin: auto;
-    padding: 15px;
+ .material{
+  text-align: center;
  }
