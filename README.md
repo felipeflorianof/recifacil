@@ -8,3 +8,4 @@ Basically the user will log in and he will be able to make a request, this reque
 What I did was create 2 Systems that 'talk' to each other. One for the donator and another one for the recycling center.
 
 The idea of this project is to be an app (updates coming soon)
+This Project will be passed to the MVC pattern using the framework Laravel soon.
