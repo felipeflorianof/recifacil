@@ -1,27 +1,35 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
-return new class extends Migration
+class CreateClientsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
+    public function up()
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('cpf')->unique();
+            $table->date('birthdate');
+            $table->string('phone');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->string('CEP');
+            $table->string('City');
+            $table->string('State');
+            $table->string('Neighborhood');
+            $table->string('street');
+            $table->string('Number');
+            $table->string('Complement');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('clients');
     }
-};
+}
+
