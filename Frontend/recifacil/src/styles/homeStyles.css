@@ -1,0 +1,56 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.logo img {
+  height: auto;
+  width: 400px;
+}
+.menu {
+  position: absolute;
+  top: 1rem;
+  right: 2.0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.menu li {
+ 
+  margin-left: 1rem;
+}
+
+.menu li a{
+    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+    text-decoration: none;
+    color: #4f6249;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #124501;
+}
+
+.menu-icon span:nth-child(2) {
+  width: 20px;
+}
+
+.menu-icon span:nth-child(3) {
+  width: 15px;
+}
