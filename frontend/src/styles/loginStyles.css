@@ -1,0 +1,199 @@
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: auto;
+  max-width: 90%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.login-box__header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #50c878;
+  margin-left: 10px;
+}
+
+.login-box__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.login-box__form__input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.login-box__form__button {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #50c878;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-box__form__button:hover {
+  background-color: #3da368;
+}
+
+.login-box__footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.login-box__footer p {
+  color: #888888;
+}
+
+.login-box__footer a {
+  color: #50c878;
+  margin-left: 5px;
+  transition: color 0.2s ease-in-out;
+}
+
+.login-box__footer a:hover {
+  color: #3da368;
+}
+.login-box__form__icon {
+  position: absolute;
+  top: 54%;
+  right: 50px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-box__form__icon svg {
+  width: 20px;
+  height: 20px;
+  color: #888888;
+  transition: color 0.2s ease-in-out;
+}
+
+  
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+.login-box__form__icon:hover svg {
+  color: #50c878;
+}
+
+/* Para telas menores que 600px */
+@media (max-width: 600px) {
+  .login-box {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .login-box__header h1 {
+    font-size: 28px;
+  }
+
+  .login-box__form__input {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .login-box__form__button {
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .login-box__footer p {
+    font-size: 14px;
+  }
+}
+
+/* Para telas entre 600px e 960px */
+@media (min-width: 600px) and (max-width: 960px) {
+  .login-box {
+    width: 60%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .login-box__header h1 {
+    font-size: 32px;
+  }
+
+  .login-box__form__input {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .login-box__form__button {
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .login-box__footer p {
+    font-size: 16px;
+  }
+}
+
+
+/* Para telas maiores que 960px */
+@media (min-width: 960px) {
+  .login-box {
+    width: 400px;
+    height: 500px;
+    padding: 40px;
+  }
+
+  .login-box__header h1 {
+    font-size: 36px;
+  }
+
+  .login-box__form__input {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .login-box__form__button {
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .login-box__footer p {
+    font-size: 16px;
+  }
+}
