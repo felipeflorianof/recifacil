@@ -16,8 +16,12 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/login" element={<Login />} />
-          <Route exact path="/signup/recycler" element={<SignupRecycler />} />
-          <Route exact path="/signup/collectionpoint" element={<SignupCollectionPoint />}/>
+          <Route exact path="/SignupRecycler" element={<SignupRecycler />} />
+          <Route
+            exact
+            path="/SignupCollectionPoint"
+            element={<SignupCollectionPoint />}
+          />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/support" element={<Support />} />
         </Routes>

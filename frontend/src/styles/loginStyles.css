@@ -15,7 +15,9 @@
   justify-content: center;
   align-items: center;
 }
-
+.teste{
+  display: flex;
+}
 .login-box__header {
   display: flex;
   justify-content: center;

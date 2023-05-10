@@ -34,10 +34,10 @@ function Navigation() {
             {showSignupOptions && (
               <ul className="signup-menu">
                 <li>
-                  <a href="#">Cadastro de Ponto de Coleta</a>
+                  <a href="SignupCollectionPoint">Cadastro de Ponto de Coleta</a>
                 </li>
                 <li>
-                  <a href="#">Cadastro de Reciclador</a>
+                  <a href="SignupRecycler">Cadastro de Reciclador</a>
                 </li>
               </ul>
             )}
