@@ -230,3 +230,4 @@ return (
 );
       }
 export default SignupCollectionPoint;
+//Onde fica o style do footer?
