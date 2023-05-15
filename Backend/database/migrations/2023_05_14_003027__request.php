@@ -12,8 +12,10 @@ class Request extends Migration
             $table->uuid('uuid')->primary()->default(DB::raw('(UUID())'));
             $table->datetime('request_date')->nullable(false);
             $table->string('status')->default('requested');
+            $table->json('materials')->nullable(false);
+            $table->timestamp('created_at')->useCurrent();
+
             $table->foreignUuid('donator_uuid')->references('uuid')->on('_donator')->onDelete('cascade');
-            $table->timestamps();
         });
     }
 

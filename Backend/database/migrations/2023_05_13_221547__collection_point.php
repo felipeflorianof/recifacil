@@ -13,8 +13,8 @@ class CollectionPoint extends Migration
             $table->uuid('uuid')->primary()->default(DB::raw('(UUID())'));
             $table->string('cnpj')->unique()->nullable(false);
             $table->date('foundation_date')->nullable(false);
-            $table->timestamp('dt_created')->useCurrent();
             $table->boolean('type')->default(1);
+            $table->timestamp('created_at')->useCurrent();
 
             $table->foreignUuid('person_uuid')->references('uuid')->on('_people'); // Chave estrangeira para a tabela "people"
             $table->foreignUuid('contact_uuid')->nullable()->references('uuid')->on('_contact'); // Chave estrangeira para a tabela "contact"

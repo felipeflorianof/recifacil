@@ -9,6 +9,9 @@ class People extends Model
 {
     use HasFactory;
 
+    protected $table = '_people';
+    protected $primaryKey = 'uuid';
+
     protected $fillable = [
         'name'
     ];

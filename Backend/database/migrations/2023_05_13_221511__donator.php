@@ -12,12 +12,12 @@ class Donator extends Migration
             $table->uuid('uuid')->primary()->default(DB::raw('(UUID())'));
             $table->string('cpf')->unique()->nullable(false);
             $table->date('date_birth')->nullable(false);
-            $table->timestamp('dt_created')->useCurrent();
             $table->boolean('type')->default(0);
+            $table->timestamp('created_at')->useCurrent();
             
-            $table->foreignUuid('person_uuid')->references('uuid')->on('_people'); // Chave estrangeira para a tabela "people"
-            $table->foreignUuid('contact_uuid')->nullable()->references('uuid')->on('_contact'); // Chave estrangeira para a tabela "contact"
-            $table->foreignUuid('address_uuid')->references('uuid')->on('_address'); // Chave estrangeira para a tabela "address"
+            $table->foreignUuid('person_uuid')->nullable()->references('uuid')->on('_people'); // Chave estrangeira para a tabela "people"
+            $table->foreignUuid('contact_uuid')->nullable()->nullable()->references('uuid')->on('_contact'); // Chave estrangeira para a tabela "contact"
+            $table->foreignUuid('address_uuid')->nullable()->references('uuid')->on('_address'); // Chave estrangeira para a tabela "address"
         });
     }
 

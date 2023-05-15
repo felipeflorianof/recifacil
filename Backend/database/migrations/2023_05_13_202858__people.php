@@ -10,7 +10,7 @@ class People extends Migration {
         Schema::create('_people', function (Blueprint $table){
             $table->uuid('uuid')->primary()->default(DB::raw('(UUID())'));
             $table->string('name')->nullable(false);
-            $table->timestamp('dt_created');
+            $table->timestamp('created_at')->nullable();
         });       
     }
  

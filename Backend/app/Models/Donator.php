@@ -10,11 +10,16 @@ class Donator extends Model
 {
     use HasFactory;
 
+    protected $table = '_donator';
+    protected $primaryKey = 'uuid';
+
     protected $fillable = [
         'cpf',
-        'date_birth'
+        'date_birth',
+        'person_uuid'
     ];
 
+    public $timestamps = false;
 
     public function person(){ return $this->belongsTo(People::class, 'person_uuid', 'uuid'); }
     public function contact(){ return $this->belongsTo(Contact::class, 'contact_uuid', 'uuid'); }

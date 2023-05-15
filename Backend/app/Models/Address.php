@@ -9,6 +9,9 @@ class Address extends Model
 {
     use HasFactory;
 
+    protected $table = '_address';
+    protected $primaryKey = 'uuid';
+
     protected $fillable = [
         'number',
         'street',

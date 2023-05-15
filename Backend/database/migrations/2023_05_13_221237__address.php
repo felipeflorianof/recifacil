@@ -18,6 +18,7 @@ class Address extends Migration
             $table->string('country')->nullable(false);
             $table->string('zip')->nullable(false);
             $table->string('complement');
+            $table->timestamp('created_at')->useCurrent();
         });
     }
 

@@ -11,6 +11,7 @@ class Contact extends Migration
         Schema::create('_contact', function (Blueprint $table){
             $table->uuid('uuid')->primary()->default(DB::raw('(UUID())'));
             $table->string('phone');
+            $table->timestamp('created_at')->useCurrent();
         });
     }
     public function down(): void

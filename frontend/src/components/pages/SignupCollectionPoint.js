@@ -38,7 +38,7 @@ function SignupCollectionPoint() {
       materiaisReciclaveis,
     };
 
-    axios.post("../backend/", dadosColetor) // <-- Substitua '' pelo caminho real para o endpoint da API
+    axios.post("http://127.0.0.1:8000/api/Collectionpoint", dadosColetor) // <-- Substitua '' pelo caminho real para o endpoint da API
       .then((resposta) => {
         console.log(resposta);
       })
