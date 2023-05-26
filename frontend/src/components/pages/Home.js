@@ -38,13 +38,13 @@ function Home() {
           </li>
           <div className="signup-container">
             <li className="signup">
-              <a  onClick={toggleSignupOptions}>
-                Cadastro
-              </a>
+              <a onClick={toggleSignupOptions}>Cadastro</a>
               {showSignupOptions && (
                 <ul className="signup-menu">
                   <li>
-                    <a href="SignupCollectionPoint">Cadastro de Ponto de Coleta</a>
+                    <a href="SignupCollectionPoint">
+                      Cadastro de Ponto de Coleta
+                    </a>
                   </li>
                   <li>
                     <a href="SignupRecycler">Cadastro de Reciclador</a>
