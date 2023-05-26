@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import "../../styles/SignupCollectionPointStyles.css";
-import axios from "axios";
+import { axiosApi } from "../../axios";
 
 function SignupCollectionPoint() {
   const [nomeCooperativa, setNomeCooperativa] = useState("");
@@ -17,7 +17,8 @@ function SignupCollectionPoint() {
   const [complemento, setComplemento] = useState("");
   const [materiaisReciclaveis, setMateriaisReciclaveis] = useState([]);
 
-  function handleSubmit(event) {
+   
+  async function handleSubmit (event) {
     event.preventDefault();
 
     const dadosColetor = {
@@ -35,16 +36,12 @@ function SignupCollectionPoint() {
       materiaisReciclaveis,
     };
 
-    console.log(dadosColetor);
+    console.log(JSON.stringify(dadosColetor));
+    
+  const {data} = await axiosApi
+      .post("/signup-collection-point", dadosColetor)
+      
 
-    axios
-      .post("http://localhost:8000/api/signup-collection-point", dadosColetor)
-      .then((resposta) => {
-        console.log(resposta);
-      })
-      .catch((erro) => {
-        console.log(erro);
-      });
   }
 
   return (
@@ -233,3 +230,4 @@ function SignupCollectionPoint() {
   );
 }
 export default SignupCollectionPoint;
+//Onde fica o style do footer?

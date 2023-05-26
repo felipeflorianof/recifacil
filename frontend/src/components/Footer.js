@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer(){
     return(
-        <div>
+        <footer>
             Todos os direitos reservados
-        </div>
+        </footer>
     )
 }

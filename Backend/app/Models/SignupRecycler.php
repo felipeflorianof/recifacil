@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class SignupRecycler extends Model
 {
     use HasFactory;
+
+    protected $table = '_people';
+    protected $primaryKey = 'uuid';
+
+    protected $fillable = [
+        'name'
+    ];
+
+    public function donator(){ return $this->hasOne(Donator::class, 'person_uuid', 'uuid'); }
+    public function collectionPoint(){ return $this->hasOne(CollectionPoint::class, 'person_uuid', 'uuid'); }
 }

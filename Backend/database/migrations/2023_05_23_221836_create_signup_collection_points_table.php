@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('signup_collection_points', function (Blueprint $table) {
-            $table->id();
+            $table->id()-> autoIncrement();
             $table->string('nomeCooperativa')->nullable();
             $table->string('email')->nullable();
             $table->string('telefone')->nullable();
