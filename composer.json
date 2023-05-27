@@ -1,5 +1,0 @@
-{
-    "require": {
-        "spatie/laravel-cors": "^1.7"
-    }
-}
