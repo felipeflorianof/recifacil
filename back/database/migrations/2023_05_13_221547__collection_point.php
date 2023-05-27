@@ -16,7 +16,7 @@ class CollectionPoint extends Migration
             $table->boolean('type')->default(1);
             $table->timestamp('created_at')->useCurrent();
 
-            $table->foreignUuid('person_uuid')->references('uuid')->on('_people'); // Chave estrangeira para a tabela "people"
+            $table->foreignUuid('user_uuid')->references('uuid')->on('users'); // Chave estrangeira para a tabela "people"
             $table->foreignUuid('contact_uuid')->nullable()->references('uuid')->on('_contact'); // Chave estrangeira para a tabela "contact"
             $table->foreignUuid('address_uuid')->references('uuid')->on('_address'); // Chave estrangeira para a tabela "address"
         });

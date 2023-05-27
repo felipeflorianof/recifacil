@@ -41,4 +41,7 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function donator(){ return $this->hasOne(Donator::class, 'user_uuid', 'uuid'); }
+    public function collectionPoint(){ return $this->hasOne(CollectionPoint::class, 'user_uuid', 'uuid'); }
 }
