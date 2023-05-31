@@ -44,8 +44,8 @@ const LoginBox = () => {
           </button>
         </form>
         <div className="login-box__footer">
-          <p>Não tem uma conta?</p>
-          <a href="#">Cadastre-se</a>
+          <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+          
         </div>
       </div>
     </div>

@@ -60,7 +60,10 @@ function SignupRecycler() {
   return (
     <div className="cadastro-container">
       <div className="cadastro-box">
+        <h2>Cadastro Reciclador</h2>
         <form onSubmit={handleSubmit}>
+          <div className="coluna1">
+
           <label>Nome Completo:</label>
           <input
             type="text"
@@ -126,16 +129,20 @@ function SignupRecycler() {
             onChange={(event) => setDataNascimento(event.target.value)}
             required
           />
+        </div>
+
+        <div className="coluna2">
 
           <label>Gênero</label>
           <select
+
             id="genero"
             value={genero}
             onChange={(event) => setGenero(event.target.value)}
           >
             <option value="masculino"> Masculino</option>
             <option value="feminino"> Feminino</option>
-            <option value="outro"> Outro</option>
+            <option value="prefiro não dizer"> Prefiro não dizer</option>
           </select>
 
           <label>CEP</label>
@@ -172,7 +179,7 @@ function SignupRecycler() {
             value={estado}
             onChange={(event) => setEstado(event.target.value)}
             required
-          />
+            />
 
           <label>Complemento</label>
           <input
@@ -182,46 +189,8 @@ function SignupRecycler() {
             onChange={(event) => setComplemento(event.target.value)}
             required
           />
-          <div className="material">
-            <label> Materiais Recicláveis</label>
-            <input
-              type="checkbox"
-              id="papel"
-              value="papel"
-              checked={materiaisReciclaveis.includes("papel")}
-              onChange={handleCheckbox}
-            />
-            <label htmlFor="papel">Papel</label>
-
-            <input
-              type="checkbox"
-              id="plastico"
-              value="plastico"
-              checked={materiaisReciclaveis.includes("plastico")}
-              onChange={handleCheckbox}
-            />
-            <label htmlFor="plastico">Plástico</label>
-
-            <input
-              type="checkbox"
-              id="vidro"
-              value="vidro"
-              checked={materiaisReciclaveis.includes("vidro")}
-              onChange={handleCheckbox}
-            />
-            <label htmlFor="vidro">Vidro</label>
-
-            <input
-              type="checkbox"
-              id="metal"
-              value="metal"
-              checked={materiaisReciclaveis.includes("metal")}
-              onChange={handleCheckbox}
-            />
-            <label htmlFor="metal">Metal</label>
-          </div>
-
-          <button type="submit">Cadastrar</button>
+        </div>
+        <button class="cadastrar" type="submit" >Cadastrar</button>
         </form>
       </div>
     </div>

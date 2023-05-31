@@ -75,6 +75,10 @@
   display: none;
 }
 
+.signup > a {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
