@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
+import { Helmet } from "react-helmet";
 import "../../styles/SignupRecyclerStyles.css"
+import axios from "axios";
 
 function SignupRecycler() {
   const [nomeCompleto, setNomeCompleto] = useState("");
@@ -59,6 +60,9 @@ function SignupRecycler() {
 
   return (
     <div className="cadastro-container">
+      <Helmet>
+        <title>Recifácil - Cadastro Ponto de Coleta</title>
+      </Helmet>
       <div className="cadastro-box">
         <h2>Cadastro Reciclador</h2>
         <form onSubmit={handleSubmit}>
@@ -190,7 +194,7 @@ function SignupRecycler() {
             required
           />
         </div>
-        <button class="cadastrar" type="submit" >Cadastrar</button>
+        <button type="submit" >Cadastrar</button>
         </form>
       </div>
     </div>

@@ -7,7 +7,7 @@ function Support(){
       <div>
         <Helmet>Recifácil - Suporte</Helmet>
 
-        <h1>Pagina de Suporte</h1>
+        <h1>Página de Suporte</h1>
         <p>Não temos suporte para esse site, mexa no código fonte e se vire para resolver</p>
       </div>
     );

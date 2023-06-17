@@ -6,6 +6,7 @@ import {
   AiOutlineEye as EyeIcon,
   AiOutlineEyeInvisible as EyeInvisibleIcon,
 } from "react-icons/ai";
+import { faDirections } from "@fortawesome/free-solid-svg-icons";
 
 const LoginBox = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -44,8 +45,9 @@ const LoginBox = () => {
           </button>
         </form>
         <div className="login-box__footer">
-          <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
-          
+          <p>Não tem uma conta?</p>
+          <p> <a href="SignupRecycler">Cadastre-se como Recilador</a></p>
+          <p> <a href="SignupCollectionPoint">Cadastre-se como Ponto de Coleta</a></p>
         </div>
       </div>
     </div>

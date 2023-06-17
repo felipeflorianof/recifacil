@@ -47,7 +47,7 @@ function SignupCollectionPoint() {
   return (
     <div className="cadastro-container">
       <Helmet>
-        <title>Recifácil - Cadastro Ponto de Coleta</title>
+        <title>Recifácil - Cadastro Coletor</title>
       </Helmet>
       <div className="cadastro-box">
         <h2> Cadastro Coletor</h2>
@@ -223,7 +223,7 @@ function SignupCollectionPoint() {
               <label htmlFor="metal">Metal</label>
             </div>
           </div>
-          <button type="submit">Cadastrar</button>
+          <div class="botao"><button type="submit">Cadastrar</button></div>
         </form>
       </div>
     </div>
