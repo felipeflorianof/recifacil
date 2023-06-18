@@ -22,7 +22,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.cadastro-box h2 {
+.cadastro-box > h2 {
   color: #50c878;
   text-align: center;
 }

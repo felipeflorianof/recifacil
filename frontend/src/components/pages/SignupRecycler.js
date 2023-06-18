@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Helmet } from "react-helmet";
+import React, { useState } from "react"
+import { Helmet } from "react-helmet"
 import "../../styles/SignupRecyclerStyles.css"
-import axios from "axios";
+import axios from "axios"
 
 function SignupRecycler() {
   const [nomeCompleto, setNomeCompleto] = useState("");

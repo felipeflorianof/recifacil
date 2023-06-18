@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.support_container {
+    background-color: #fff;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.support_container > h1{
+    color: #50c878;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.contato div {
+    margin: 0 10px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(252, 245, 245);
+}
